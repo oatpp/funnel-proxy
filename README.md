@@ -17,6 +17,6 @@ See more:
 ## When Not To Use
 
 - Streaming. You can't do streaming through funnel-proxy, because the stream will acquire a connection from connection-pool
-forever and you'll limit your concurrency level to the number of connections in the connection pool.
+forever and you'll limit your concurrency level to the number of connections in the connection pool.  
 *However you can implement your custom streaming on the proxy-side - when proxy doing continuous streaming while requesting chunk-by-chunk from the source service*
 - Long-polling - same as for streaming.
